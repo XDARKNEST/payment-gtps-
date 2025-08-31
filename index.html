@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTPS Payment Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/5968/5968282.png" alt="Logo">
+    <h1>GTPS Payment Store</h1>
+  </header>
+
+  <div class="container">
+
+    <!-- Premium WLS -->
+    <div class="section">
+      <h2>🌟 Premium WLS</h2>
+      <div class="grid">
+        <div class="card"><h3>2 Premium WLS</h3><div class="price">1 WLS</div></div>
+        <div class="card"><h3>5 Premium WLS</h3><div class="price">2 WLS</div></div>
+        <div class="card"><h3>10 Premium WLS</h3><div class="price">4 WLS</div></div>
+        <div class="card"><h3>20 Premium WLS</h3><div class="price">7 WLS</div></div>
+      </div>
+    </div>
+
+    <!-- Roles -->
+    <div class="section">
+      <h2>👑 Roles</h2>
+      <div class="grid">
+        <div class="card"><h3>VIP</h3><div class="price">1 DL</div></div>
+        <div class="card"><h3>SUPER VIP</h3><div class="price">3 DL</div></div>
+        <div class="card"><h3>MODS</h3><div class="price">5 DL</div></div>
+        <div class="card"><h3>ADMIN</h3><div class="price">8 DL</div></div>
+        <div class="card"><h3>COMMUNITY MANAGER</h3><div class="price">13 DL</div></div>
+        <div class="card"><h3>CREATOR</h3><div class="price">15 DL</div></div>
+        <div class="card"><h3>GOD</h3><div class="price">20 DL</div></div>
+      </div>
+    </div>
+
+    <!-- Form Order -->
+    <div class="section">
+      <h2>📝 Form Order</h2>
+      <div class="form-box">
+        <form id="orderForm">
+          <label for="username">Username GTPS</label>
+          <input type="text" id="username" name="username" placeholder="Masukkan username kamu" required>
+
+          <label for="item">Pilih Premium WLS / Role</label>
+          <select id="item" name="item" required>
+            <option value="">-- Pilih --</option>
+            <option value="2 Premium WLS - 1 WLS">2 Premium WLS - 1 WLS</option>
+            <option value="5 Premium WLS - 2 WLS">5 Premium WLS - 2 WLS</option>
+            <option value="10 Premium WLS - 4 WLS">10 Premium WLS - 4 WLS</option>
+            <option value="20 Premium WLS - 7 WLS">20 Premium WLS - 7 WLS</option>
+            <option value="VIP - 1 DL">VIP - 1 DL</option>
+            <option value="SUPER VIP - 3 DL">SUPER VIP - 3 DL</option>
+            <option value="MODS - 5 DL">MODS - 5 DL</option>
+            <option value="ADMIN - 8 DL">ADMIN - 8 DL</option>
+            <option value="COMMUNITY MANAGER - 13 DL">COMMUNITY MANAGER - 13 DL</option>
+            <option value="CREATOR - 15 DL">CREATOR - 15 DL</option>
+            <option value="GOD - 20 DL">GOD - 20 DL</option>
+          </select>
+
+          <label for="payment">Metode Pembayaran</label>
+          <select id="payment" name="payment" required>
+            <option value="">-- Pilih Metode --</option>
+            <option value="World Lock (WLS)">World Lock (WLS)</option>
+            <option value="Diamond Lock (DL)">Diamond Lock (DL)</option>
+            <option value="Pulsa">Pulsa</option>
+            <option value="Dana">Dana</option>
+            <option value="OVO">OVO</option>
+            <option value="QRIS">QRIS</option>
+          </select>
+
+          <div class="summary" id="summaryBox"></div>
+
+          <button type="submit" class="btn">🚀 Kirim Order</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Riwayat Transaksi -->
+    <div class="section">
+      <h2>📜 Riwayat Transaksi</h2>
+      <div class="history-box" id="historyBox">
+        <p>Belum ada transaksi.</p>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2025 GTPS Store - All Rights Reserved
+    <div class="contact">
+      Hubungi Admin: 
+      <a href="https://wa.me/6281649561209">WhatsApp</a> | 
+      <a href="#">Discord</a> | 
+      <a href="mailto:support@gtpsstore.com">Email</a>
+    </div>
+  </footer>
+
+  <!-- Loader -->
+  <div class="loader" id="loader"><div></div></div>
+
+  <!-- Script -->
+  <script type="module" src="app.js"></script>
+
+</body>
+</html>
