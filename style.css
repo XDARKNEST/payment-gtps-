@@ -1,0 +1,67 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #e2e8f0;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+header img {height:40px;border-radius:8px;}
+header h1 {margin:0;font-size:26px;font-weight:bold;color:#fff;}
+.container {padding:30px 20px;max-width:1000px;margin:auto;}
+.section {margin-bottom:40px;}
+.section h2 {font-size:22px;color:#38bdf8;margin-bottom:15px;border-left:5px solid #38bdf8;padding-left:10px;}
+.grid {display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;}
+.card {background:#1e293b;border-radius:12px;padding:18px;text-align:center;box-shadow:0 2px 6px rgba(0,0,0,0.3);transition:0.3s;}
+.card:hover {background:#273449;transform:translateY(-3px);}
+.card h3 {margin:0 0 8px;color:#fff;font-size:18px;}
+.card .price {font-size:16px;font-weight:bold;color:#facc15;}
+.form-box {background:#1e293b;padding:25px;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,0.4);}
+label {display:block;margin-bottom:6px;font-weight:600;color:#94a3b8;}
+input,select {
+  width:100%;padding:12px;margin-bottom:18px;
+  border-radius:8px;border:none;background:#0f172a;color:#e2e8f0;font-size:15px;
+  outline:none;transition:0.3s;
+}
+input:focus,select:focus {box-shadow:0 0 0 2px #38bdf8;}
+.btn {
+  display:block;width:100%;padding:14px;background:linear-gradient(90deg,#38bdf8,#0ea5e9);
+  color:#fff;font-size:16px;font-weight:bold;border-radius:8px;text-align:center;
+  cursor:pointer;border:none;transition:0.3s;
+}
+.btn:hover {opacity:0.9;transform:translateY(-1px);}
+.summary {
+  margin:20px 0;padding:15px;background:#0f172a;
+  border-radius:10px;font-size:14px;display:none;border:1px solid #38bdf8;
+}
+.summary strong {color:#38bdf8;font-size:15px;}
+footer {text-align:center;padding:20px;background:#0f172a;font-size:14px;color:#64748b;margin-top:40px;}
+.contact {margin-top:8px;font-size:13px;}
+.contact a {color:#38bdf8;text-decoration:none;}
+/* Loader */
+.loader {
+  display:none;position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.6);justify-content:center;align-items:center;z-index:9999;
+}
+.loader div {
+  width:50px;height:50px;border:6px solid #38bdf8;border-top:6px solid transparent;
+  border-radius:50%;animation:spin 1s linear infinite;
+}
+@keyframes spin {100%{transform:rotate(360deg);}}
+/* Riwayat */
+.history-box {background:#1e293b;padding:20px;border-radius:12px;box-shadow:0 3px 8px rgba(0,0,0,0.4);}
+.history-item {border-bottom:1px solid #334155;padding:10px 0;}
+.history-item:last-child {border-bottom:none;}
+.status {font-weight:bold;}
+.status.pending {color:orange;}
+.status.success {color:lime;}
+.status.failed {color:red;}
